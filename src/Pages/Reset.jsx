@@ -10,7 +10,7 @@ function Reset({ user, setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const status = await fetch(`http://localhost:3000/auth/reset/${userId}`, {
+      const status = await fetch(`https://deft-blancmange-dac5c3.netlify.app/auth/reset/${userId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

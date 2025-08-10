@@ -13,7 +13,7 @@ function Todo({ user }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:3000/TodoNames/", {
+    fetch("https://deft-blancmange-dac5c3.netlify.app/TodoNames/", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
@@ -42,7 +42,7 @@ function Todo({ user }) {
   const handleAddTask = async () => {
     if (!title.trim()) return;
     try {
-      const res = await fetch("http://localhost:3000/TodoNames/", {
+      const res = await fetch("https://deft-blancmange-dac5c3.netlify.app/TodoNames/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -60,7 +60,7 @@ function Todo({ user }) {
 
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`http://localhost:3000/TodoNames/${id}`, {
+      const res = await fetch(`https://deft-blancmange-dac5c3.netlify.app/TodoNames/${id}`, {
         method: "DELETE",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
@@ -76,7 +76,7 @@ function Todo({ user }) {
 
   const handleEdit = async (id) => {
     try {
-      const res = await fetch(`http://localhost:3000/TodoNames/${id}`, {
+      const res = await fetch(`https://deft-blancmange-dac5c3.netlify.app/TodoNames/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -95,7 +95,7 @@ function Todo({ user }) {
 
   const toggleCompleted = async (id, currentStatus) => {
     try {
-      const res = await fetch(`http://localhost:3000/TodoNames/${id}/complete`, {
+      const res = await fetch(`https://deft-blancmange-dac5c3.netlify.app/TodoNames/${id}/complete`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -111,7 +111,7 @@ function Todo({ user }) {
 
   const handleLogout = async () => {
     try {
-      const res = await fetch("http://localhost:3000/Auth/logout", {
+      const res = await fetch("https://deft-blancmange-dac5c3.netlify.app/Auth/logout", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },

@@ -9,7 +9,7 @@ function Signup({ setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const status = await fetch("http://localhost:3000/auth/signup", {
+      const status = await fetch("https://deft-blancmange-dac5c3.netlify.app/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
