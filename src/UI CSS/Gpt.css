@@ -1,0 +1,285 @@
+.todo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background: #f0f4f8;
+  min-height: 100vh;
+}
+
+.todo.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.todo__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.todo__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.todo__input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+.todo__input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.filter-btn {
+  margin-right: 0.5rem;
+}
+
+.filter-btn.active {
+  background: #28a745;
+}
+
+.todo__list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.todo__item {
+  background: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.todo__item.completed {
+  border-left-color: #28a745;
+  background-color: #e6ffed;
+}
+
+.todo__item.pending {
+  border-left-color: #ffc107;
+}
+
+.todo__details {
+  margin-bottom: 0.5rem;
+}
+
+.todo__subtitle {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.todo__description {
+  margin: 0.3rem 0 0;
+  color: #666;
+}
+
+.todo__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo__checkbox input {
+  margin-right: 0.5rem;
+}
+
+.todo__actions .btn {
+  margin-left: 0.5rem;
+}
+
+.todo__edit-form input {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.todo__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+}
+
+.logout-btn:hover {
+  background-color: #b02a37;
+}
+
+.reset-btn {
+  background-color: #6c757d;
+}
+
+.reset-btn:hover {
+  background-color: #545b62;
+}
+
+.add-btn {
+  background-color: #28a745;
+}
+
+.add-btn:hover {
+  background-color: #1e7e34;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #b02a37;
+}
+
+.save-btn {
+  background-color: #17a2b8;
+}
+
+.save-btn:hover {
+  background-color: #117a8b;
+}
+
+.todo-wrapper {
+  background: #ffe5b4; /* Peach color */
+}
+
+/* Button icon spacing */
+.btn i {
+  margin-right: 6px;
+}
+
+/* Optional: soften background transitions */
+.todo__item {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.todo__item:hover {
+  transform: scale(1.02);
+}
+
+/* Peach background and center layout */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe5b4;
+  height: 100vh;
+  padding: 1rem;
+}
+
+/* Auth container styling */
+.auth-form-container {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title */
+.auth-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Inputs */
+.auth-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.auth-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button */
+.login-btn {
+  width: 100%;
+  background-color: #28a745;
+}
+
+.login-btn:hover {
+  background-color: #1e7e34;
+}
+
+/* Icon spacing */
+.login-btn i {
+  margin-right: 6px;
+}
+
+/* Shared styles already exist from Login enhancements */
+.signup-btn {
+  width: 100%;
+  background-color: #007bff;
+}
+
+.signup-btn:hover {
+  background-color: #0056b3;
+}
+
+.signup-btn i {
+  margin-right: 6px;
+}
+
+.reset-btn {
+  width: 100%;
+  background-color: #ffc107;
+  color: #000;
+}
+
+.reset-btn:hover {
+  background-color: #e0a800;
+}
+
+.reset-btn i {
+  margin-right: 6px;
+}
