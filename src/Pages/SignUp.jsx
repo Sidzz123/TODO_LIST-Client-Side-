@@ -9,7 +9,7 @@ function Signup({ setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const status = await fetch("https://deft-blancmange-dac5c3.netlify.app/auth/signup", {
+      const status = await fetch("https://todo-list-server-side-5t83.onrender.com/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

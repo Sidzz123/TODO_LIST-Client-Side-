@@ -10,7 +10,7 @@ function Login({ setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const status = await fetch("https://prismatic-unicorn-46dcd2.netlify.app/Auth/login", {
+      const status = await fetch("https://todo-list-server-side-5t83.onrender.com/Auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
