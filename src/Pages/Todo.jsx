@@ -13,7 +13,7 @@ function Todo({ user }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://server-side-2jo8.onrender.com/TodoNames/", {
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/TodoNames/`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
@@ -42,7 +42,7 @@ function Todo({ user }) {
   const handleAddTask = async () => {
     if (!title.trim()) return;
     try {
-      const res = await fetch("https://server-side-2jo8.onrender.com/TodoNames/", {
+      const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/TodoNames/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -60,7 +60,7 @@ function Todo({ user }) {
 
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`https://server-side-2jo8.onrender.com/TodoNames/${id}`, {
+      const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/TodoNames/${id}`, {
         method: "DELETE",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
@@ -76,7 +76,7 @@ function Todo({ user }) {
 
   const handleEdit = async (id) => {
     try {
-      const res = await fetch(`https://server-side-2jo8.onrender.com/TodoNames/${id}`, {
+      const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/TodoNames/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -95,7 +95,7 @@ function Todo({ user }) {
 
   const toggleCompleted = async (id, currentStatus) => {
     try {
-      const res = await fetch(`https://server-side-2jo8.onrender.com/TodoNames/${id}/complete`, {
+      const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/TodoNames/${id}/complete`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -111,7 +111,7 @@ function Todo({ user }) {
 
   const handleLogout = async () => {
     try {
-      const res = await fetch("https://server-side-2jo8.onrender.com/Auth/logout", {
+      const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/Auth/logout`, {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
