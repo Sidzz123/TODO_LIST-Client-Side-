@@ -10,7 +10,7 @@ function Login({ setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const status = await fetch("https://server-4lmy.onrender.com/Auth/login", {
+      const status = await fetch("https://server-side-2jo8.onrender.com/Auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

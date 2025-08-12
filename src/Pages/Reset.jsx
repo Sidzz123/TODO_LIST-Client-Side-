@@ -10,7 +10,7 @@ function Reset({ user, setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const status = await fetch(`https://server-4lmy.onrender.com/auth/reset/${userId}`, {
+      const status = await fetch(`https://server-side-2jo8.onrender.com/auth/reset/${userId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -9,7 +9,7 @@ function Signup({ setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const status = await fetch("https://server-4lmy.onrender.com/auth/signup", {
+      const status = await fetch("https://server-side-2jo8.onrender.com/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
